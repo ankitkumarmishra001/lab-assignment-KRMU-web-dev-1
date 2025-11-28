@@ -1,0 +1,167 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+header {
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: rgb(249, 4, 4);
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.signup-btn {
+    background: red;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid darkred;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+
+.hero {
+    background: url("https://www.mashed.com/img/gallery/the-best-new-fast-food-menu-items-weve-tried-in-2023-so-far/l-intro-1682446897.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: rgb(252, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    margin: 0;
+}
+
+.btn {
+    background: red;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.section-heading {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.menu-card {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.rest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 15px;
+}
+
+.rest-card {
+    background: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.rest-card img {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rest-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-grid,
+    .rest-grid {
+        grid-template-columns: 1fr;
+    }
+}
