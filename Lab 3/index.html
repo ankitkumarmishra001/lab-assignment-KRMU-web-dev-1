@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">MyPortfolio</div>
+        <nav class="navBar">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1 class="fadeIn">Hi, I am <span>Ankit Kumar Mishra</span></h1>
+            <h2 class="animateColor">AI Cloud Engineer</h2>
+            <p>I love designing, implementing, and managing cloud computing systems.</p>
+            <button class="btn">Hire Me</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="profilepic_myself.jpg" alt="profile image">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a B.Tech CSE (First Year) student learning web development.  
+            This is my portfolio website made using HTML, CSS, Flexbox, Grid and animations.
+        </p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">C Language</div>
+            <div class="skill-card">Python Basics</div>
+            <div class="skill-card">Git & Github</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Food Delivery Website</h3>
+                <p>A simple frontend project using HTML & CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculator App</h3>
+                <p>Basic calculator made using JavaScript.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>You are viewing this project right now :)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 My Portfolio | Made by Student</p>
+    </footer>
+
+</body>
+</html>
